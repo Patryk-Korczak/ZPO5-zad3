@@ -20,7 +20,7 @@ public class Main {
     }
 
 	List<Future<Boolean>> response = executor.invokeAll(callables);
-    int numberOfViewers = 0;
+    	int numberOfViewers = 0;
 	for (Future<Boolean> temp : response) {
 		if(temp.get()) numberOfViewers++;
 	}
